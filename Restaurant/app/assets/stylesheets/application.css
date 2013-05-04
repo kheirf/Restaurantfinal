@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+[class*="span"] {
+ /*background : lightblue;*/
+ margin-bottom: 10px;
+ border-radius: 5px 5px 5px 5px;
+ line-height: 80px;
+/* text-align: center;*/
+}
+[class="span10"] 
+{
+ /*background-color: green;*/
+}
+body
+{
+	background-image:url('bg.png');
+	background-repeat:repeat;
+}
+.page
+{
+	background-color: white;
+	padding: 20px;
+}
+.footer
+{
+	margin-top: 10px;
+	box-shadow: 5px 5px 30px #000;
+	border: solid grey 1px;
+	height: 120px;
+	margin-top: 20px;
+	border-radius: 10px;
+background: -webkit-linear-gradient( bottom, #403E3F, #696667);
+background:    -moz-linear-gradient( bottom, #403E3F, #696667);
+background:     -ms-linear-gradient( bottom, #403E3F, #696667); 
+background:      -o-linear-gradient( bottom, #403E3F, #696667); 
+background:         linear-gradient( bottom, #403E3F, #696667); 
+color: white;
+}
+
+.subfooter2
+{
+	margin-top: 15px;
+	text-align: center;
+	border-right: solid grey 1px;
+	border-left: solid grey 1px;
+	border-radius: 0px;
+}
+.subfooter li 
+{
+		list-style-type: none;
+}
+.subfooter a:hover
+{
+	color: #137DD4;
+	font-size: 1.1em;
+}
+
+.subfooter
+{
+	margin-top: 15px;
+	text-align: center;
+
+}

@@ -1,0 +1,29 @@
+<h1>Listing subscribes</h1>
+
+<table>
+  <tr>
+    <th>Customername</th>
+    <th>Contactno</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @subscribes.each do |subscribe| %>
+  <tr>
+    <td><%= subscribe.customerName %></td>
+    <td><%= subscribe.contactNo %></td>
+    <td><%= subscribe.email %></td>
+    <td><%= subscribe.password %></td>
+    <td><%= link_to 'Show', subscribe %></td>
+    <td><%= link_to 'Edit', edit_subscribe_path(subscribe) %></td>
+    <td><%= link_to 'Destroy', subscribe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Subscribe', new_subscribe_path %>

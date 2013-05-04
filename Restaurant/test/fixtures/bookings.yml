@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  customerName: MyString
+  bookingDate: 2013-05-04 11:22:50
+  peopleNo: 1
+
+two:
+  customerName: MyString
+  bookingDate: 2013-05-04 11:22:50
+  peopleNo: 1
