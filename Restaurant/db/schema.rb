@@ -55,9 +55,7 @@ ActiveRecord::Schema.define(:version => 20130504182836) do
 
   create_table "subscribes", :force => true do |t|
     t.string "customerName"
-    t.string "contactNo"
     t.string "email"
-    t.string "password"
   end
 
 end

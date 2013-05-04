@@ -6,8 +6,12 @@ Restaurant::Application.routes.draw do
   resources :bookings
 
   resources :subscribes
+  #get "subscribes/new"
+  
 
   get "index/index"
+  
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -16,6 +20,7 @@ Restaurant::Application.routes.draw do
   match '/menu' => 'menu#displayMenu'
   match '/index' => 'index#index'
   match '/contact' => 'contact#contact'
+  #match '/subscribe/:new' => 'subscribe#new'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
