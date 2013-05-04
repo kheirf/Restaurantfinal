@@ -1,4 +1,6 @@
 Restaurant::Application.routes.draw do
+  get "menu/displayMenu"
+
   resources :bookings
 
   resources :subscribes

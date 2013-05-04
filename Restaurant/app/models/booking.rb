@@ -1,4 +1,4 @@
 class Booking < ActiveRecord::Base
-  attr_accessible :bookingDay, :bookingMonth, :bookingYear, :customerName, :peopleNo, :email, :contactNumber
+  attr_accessible :bookingDate, :customerName, :peopleNo, :email, :contactNumber
   
 end
