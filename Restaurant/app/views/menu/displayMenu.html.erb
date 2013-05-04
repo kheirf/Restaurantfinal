@@ -1,12 +1,84 @@
 <h1>Menu#displayMenu</h1>
 
+<h2>Starters</h2>
+
+<% start=Starter.all() %>
+<table>
+	<tr>
+		<th> Name  </th>
+		<th> Description </th>
+		<th> Price </th>
+	</tr>
+
+	
+	<tr>
+		<% start.each do |d| %>
+		<td> <%= d.name %> </td>
+		<td> <%= d.description %> </td>
+		<td> <%= d.price %> </td>
+	</tr>
+	<% end %>
+</table>
+
+<h2>Main Dishes</h2>
+
 <% dish=Menu.all() %>
 <table>
 	<tr>
-		
+		<th> Name  </th>
+		<th> Description </th>
+		<th> Price </th>
 	</tr>
-</table>	
-<%  %>
+
+	
+	<tr>
+		<% dish.each do |d| %>
+		<td> <%= d.dishName %> </td>
+		<td> <%= d.description %> </td>
+		<td> <%= d.price %> </td>
+	</tr>
+	<% end %>
+</table>
+
+<h2>Desserts</h2>
+
+<% dess=Dessert.all() %>
+<table>
+	<tr>
+		<th> Name  </th>
+		<th> Description </th>
+		<th> Price </th>
+	</tr>
+
+	
+	<tr>
+		<% dess.each do |d| %>
+		<td> <%= d.name %> </td>
+		<td> <%= d.description %> </td>
+		<td> <%= d.price %> </td>
+	</tr>
+	<% end %>
+</table>
+
+<h2>Drinks</h2>
+
+<% drink=Drink.all() %>
+<table>
+	<tr>
+		<th> Name  </th>
+		<th> Description </th>
+		<th> Price </th>
+	</tr>
+
+	
+	<tr>
+		<% drink.each do |d| %>
+		<td> <%= d.name %> </td>
+		<td> <%= d.description %> </td>
+		<td> <%= d.price %> </td>
+	</tr>
+	<% end %>
+</table>
 
 
 
