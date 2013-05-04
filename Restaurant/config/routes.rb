@@ -1,4 +1,6 @@
 Restaurant::Application.routes.draw do
+  get "contact/contact"
+
   get "menu/displayMenu"
 
   resources :bookings
@@ -13,6 +15,7 @@ Restaurant::Application.routes.draw do
   # Sample of regular route:
   match '/menu' => 'menu#displayMenu'
   match '/index' => 'index#index'
+  match '/contact' => 'contact#contact'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
