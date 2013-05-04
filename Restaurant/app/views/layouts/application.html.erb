@@ -14,7 +14,7 @@
 		<%= image_tag("logo.png", :alt => "logo") %>
 		<ul class="nav nav-pills right">
   			<li class="active"><%= link_to 'Home', index_path(@index) %></li>
-  			<li class="active"><a href="#">Menu</a></li>
+  			<li class="active"><%= link_to 'Menu', menu_path %></li>
   			<li class="active"><%= link_to 'Booking', new_booking_path %> </li>
   			<li class="active"><%= link_to 'Subscribe', new_subscribe_path %></li>
 		</ul>
