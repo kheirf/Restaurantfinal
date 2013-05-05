@@ -1,2 +1,67 @@
-<h1>Index#index</h1>
-<p>Find me in app/views/index/index.html.erb</p>
+<span id="sl_play" class="sl_command">&nbsp;</span>
+    <span id="sl_pause" class="sl_command">&nbsp;</span>
+    
+    <section id="slideshow">
+    
+        
+        <a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+        <a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+        
+        <div class="contain">
+            <div class="c_slider"></div>
+            <div class="slider">
+                <figure>
+                    <%= image_tag ("slide1.jpg") %>
+                    <figcaption>Summer is coming !</figcaption>
+                </figure><!--
+                --><!--
+                --><figure>
+                    <%= image_tag ("slide3.jpg") %>
+                    <figcaption>Fresh salads !</figcaption>
+                </figure><!--
+                --><figure>
+                    <%= image_tag ("slide4.JPG") %>
+                    <figcaption>Enjoy your lunch time</figcaption>
+                </figure>
+            
+            <figure>
+                    <%= image_tag ("slide2.jpg") %>
+                    <figcaption>Dessert of the day</figcaption>
+                </figure></div>
+        </div>   
+
+        
+    </section>
+    
+    <p>Le Jardin du Quai is an award winning Michelin star restaurant in Dublin city centre, head chef Ross 
+        Lewis focuses on local & seasonal produce to create an array of modern dishes with a combination
+         of robust flavours</p>
+    <p>Le Jardin du Quai opened in February 1992 with co-proprietors Ross Lewis and Martin Corbett.
+        It is located in the Merrion Row in Dublin's city centre.
+</p>
+<p>A flavour of what is said about Le Jardin Du Quai - Saveur Magazine U.S editor Colman Andrews' favourite Dublin
+ restaurant, Tom Doorly - Irish Times "This sestaurant is not just about truly brilliant food.
+It's also about the very essence of Irish hospitality".</p>
+
+<button class="btn-success btn-primary btn-large" type="submit"><%= link_to 'Booking', new_booking_path %> <i class="icon-white icon-ok-sign"></i> </button>
+<br>
+    <h3>Reviews</h3>
+<div class="alert span11 alert-info alert-block">
+
+<p>
+<strong>Superb Restaurant</strong><br><br>
+April 14, 2013<br><br>
+<i>
+Have lunch here with my son on a regular basis and always find the food delicious and top notch!
+It has a lovely friendly and comfy atmosphere and the service is excellent and food reasonably priced. 
+Great value for money.Terrific for Special Occaisions. Definitely worth a trip</i></p>
+</div>
+<div class="alert span11 alert-info alert-block">
+
+<p>
+<strong>You'll not be disappointed !</strong><br><br>
+April 1, 2013<br><br>
+<i>
+We went here for a meal last weekend and it was absolutely fantastic, food, staff and ambience were all faultless.
+We cannot wait to return for a visit next year, I would highly recommend this restaurant :-)</i></p>
+</div>
