@@ -60,7 +60,7 @@ color: white;
 {
 		list-style-type: none;
 }
-.subfooter a:hover
+.subfooter
 {
 	color: #137DD4;
 	font-size: 1.1em;
