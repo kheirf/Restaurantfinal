@@ -1,17 +1,39 @@
 Restaurant::Application.routes.draw do
-  get "menu/displayMenu"
+  get "admin/new_menu"
+  
+  get "admin/view"
 
+  get "contact/contact"
+
+  get "menu/displayMenu"
+  
   resources :bookings
 
   resources :subscribes
+  #get "subscribes/new"
+  #resources :menu
+  #resources :menus
+  
+  get "menu/new"
 
   get "index/index"
-
+  
+  get "admin/edit_menu"
+  
+  get "menu/edit"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
+  match '/menu' => 'menu#displayMenu'
   match '/index' => 'index#index'
+  match '/contact' => 'contact#contact'
+  match '/admin' => 'admin#view'
+  match '/admins/new' => 'admin#new_menu'
+  match '/admins' => 'admin#create_menu'
+  match '/menus' => 'menu#create'
+  match '/menus/edit/:id' => 'menu#edit'
+  #match '/subscribe/:new' => 'subscribe#new'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -62,5 +84,5 @@ Restaurant::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  match ':controller(/:action(/:id))(.:format)'
 end

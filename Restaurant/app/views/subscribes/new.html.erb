@@ -1,7 +1,42 @@
-<div class="">
-<h1 style="text-align: center">Subscription</h1>
-<p>Hello World</p>
+<div class="subs">
+	<h3 style="text-align: center">10% Off to 3rd level students</h3>
+	<p>Just flash your student card on payment<br />Participating universities and colleges can be found below</p>
 </div>
-<%= render 'form' %>
 
-<%= link_to 'Back', subscribes_path %>
+<div>
+	<canvas id="myCanvas" width="700" height="500"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+      var imageObj2 = new Image();
+      var imageObj3 = new Image();
+
+      imageObj.onload = function() 
+      {
+        context.drawImage(imageObj, 0, 10);
+      };
+      imageObj.src = 'http://usi.ie/wp-content/uploads/2012/08/TOP_LOGO_USI_FULL.png';
+      
+      imageObj2.onload = function()
+      {
+      	context.drawImage(imageObj2, 450, -30);
+      };
+      imageObj2.src = 'http://campusit.net/wp-content/uploads/2011/07/dit_casestudy_logo.jpg';
+      
+      imageObj3.onload = function() 
+      {
+        context.drawImage(imageObj3, 150, 160);
+      };
+      imageObj3.src = 'http://www.universitiesireland.ie/images/ui-logo.gif';
+    </script>
+</div>
+
+<div>
+	<div class="subs">
+		<h4 style="text-align: center">Or you can subscribe on our website to get the latest deal</h4>
+		<p>Just provide your name and your email address</p>
+	</div>
+<%= render 'form' %>
+</div>
+

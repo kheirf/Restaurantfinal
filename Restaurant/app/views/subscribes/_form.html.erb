@@ -1,7 +1,8 @@
 <%= form_for(@subscribe) do |f| %>
   <% if @subscribe.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@subscribe.errors.count, "error") %> prohibited this subscribe from being saved:</h2>
+  <div align="center">
+    <div class="errorExplanation">
+      <h2><%= pluralize(@subscribe.errors.count, "error") %> , please correct your errors:</h2>
 
       <ul>
       <% @subscribe.errors.full_messages.each do |msg| %>
@@ -9,26 +10,13 @@
       <% end %>
       </ul>
     </div>
+  </div>
   <% end %>
-  <div class="formContainer">
-  	<div class="field">
-    	<%= label_tag "Name" %>
-    	<%= f.text_field :customerName %>
-  	</div>
-  	<div class="field">
-    	<%= label_tag "Contact Number" %>
-    	<%= f.text_field :contactNo %>
-  	</div>
-  	<div class="field">
-    	<%= label_tag "Email Address (used as login)" %>
-    	<%= f.text_field :email %>
-  	</div>
-  	<div class="field">
-    	<%= label_tag "Password" %>
-    	<%= f.text_field :password %>
-  	</div>
-  	<div class="actions">
-    	<%= f.submit %>
+  <div align="center">
+  	<div class="f">
+    	<p>Your Name: <br /><%= f.text_field :customerName %></p>
+    	<p>Email Address: <br /><%= f.text_field :email %></p>
+    	<button id="radio">Submit</button>
   	</div>
   </div>
 <% end %>

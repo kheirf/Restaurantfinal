@@ -1,3 +1,63 @@
 // Place all the styles related to the subscribes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@-webkit-keyframes greenPulse 
+{
+  from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+#radio
+{
+  width: 220px;
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.f
+{
+  margin-top: 10px;
+  padding-top: 15px;
+  border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
+  background-color: lightyellow;
+  width: 300px;
+  align: center;
+}
+
+.subs
+{
+  padding: 5px;
+  margin-bottom: 5px;
+  align: center;
+  color: white;
+  background-color: black;
+  border-radius: 5px 10px 5px 10px / 10px 5px 10px 5px;
+}
+
+.errorExplanation 
+{
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  //padding-bottom: 0;
+  //margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li 
+  {
+    text-align: left;
+    font-size: 12px;
+    list-style: square;
+  }
+}
