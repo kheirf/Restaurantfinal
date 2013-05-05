@@ -1,8 +1,10 @@
 Restaurant::Application.routes.draw do
+  get "admin/view"
+
   get "contact/contact"
 
   get "menu/displayMenu"
-
+  
   resources :bookings
 
   resources :subscribes
@@ -20,6 +22,7 @@ Restaurant::Application.routes.draw do
   match '/menu' => 'menu#displayMenu'
   match '/index' => 'index#index'
   match '/contact' => 'contact#contact'
+  match '/admin' => 'admin#view'
   #match '/subscribe/:new' => 'subscribe#new'
   # Keep in mind you can assign values other than :controller and :action
 

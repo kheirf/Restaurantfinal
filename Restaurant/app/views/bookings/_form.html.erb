@@ -10,30 +10,14 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= label_tag 'Your name' %>
-    <%= f.text_field :customerName %>
+<div align="center">
+  <div class="f">
+    <p>Your Name: <br /><%= f.text_field :customerName %></p>
+    <p>Booking Date: <br /><%= f.date_select :bookingDate %></p>
+    <p>Number of people: <br /><%= f.number_field :peopleNo %></p>
+    <p>Contact Number: <br /><%= f.text_field :contactNumber %></p>
+    <p>Email: <br /><%= f.text_field :email %></p>
+    <button id="radio">Submit</button>
   </div>
-  <div class="field">
-    <%= label_tag 'Booking Date' %>
-    <%= f.date_select :bookingDate %>
-  </div>
-  <div class="field">
-    <%= label_tag 'Number of people' %>
-    <%= f.number_field :peopleNo %>
-  </div>
-  <div class="field">
-    <%= label_tag 'Contact Number' %>
-    <%= f.text_field :contactNumber %>
-  </div>
-
-<div class="field">
-    <%= label_tag 'Email' %>
-    <%= f.text_field :email %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+ </div>
 <% end %>
