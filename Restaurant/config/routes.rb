@@ -32,7 +32,7 @@ Restaurant::Application.routes.draw do
   match '/admins/new' => 'admin#new_menu'
   match '/admins' => 'admin#create_menu'
   match '/menus' => 'menu#create'
-  match '/menus/edit/:id' => 'menu#edit'
+  #match '/admins/edit_menu/:id' => 'admin#edit_menu'
   #match '/subscribe/:new' => 'subscribe#new'
   # Keep in mind you can assign values other than :controller and :action
 
